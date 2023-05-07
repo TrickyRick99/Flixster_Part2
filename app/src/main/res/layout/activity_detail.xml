@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailActivity"
+    android:background="@color/black">
+
+
+    <TextView
+        android:id="@+id/showTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textSize="40dp"
+        tools:layout_editor_absoluteY="521dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/releaseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Release date: 2023-05-01"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="214dp"
+        tools:layout_editor_absoluteY="587dp"
+
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/voteCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vote Count: 12345"
+        android:textSize="18dp"
+        android:layout_marginBottom="5dp"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="587dp"
+        android:textColor="@color/white"/>
+
+    <RatingBar
+        android:id="@+id/tvRating"
+        style="@style/Widget.AppCompat.RatingBar.Indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:isIndicator="true"
+        android:numStars="10"
+        android:progressBackgroundTint="#FAEA63"
+        android:stepSize="0.5"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="613dp" />
+
+    <TextView
+        android:id="@+id/descTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Description"
+        android:textAlignment="center"
+        android:textSize="22dp"
+        tools:layout_editor_absoluteY="673dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/showDescripton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Describing"
+        tools:layout_editor_absoluteY="712dp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"/>
+
+    <ImageView
+        android:id="@+id/showImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+</LinearLayout>
